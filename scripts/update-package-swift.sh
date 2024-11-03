@@ -10,6 +10,6 @@ ALL_TARGETS="MLKitCommon GoogleToolboxForMac MLKitNaturalLanguage MLKitTranslate
 for TARGET_NAME in $ALL_TARGETS
 do
     CHECKSUM=$(cat build/outputs/$TARGET_NAME.xcframework.zip.shasum)
-    URL="https://github.com/kientux/google-mlkit-spm/releases/download/$TARGET_VERSION/$TARGET_NAME.xcframework.zip"
+    URL="https://github.com/coderlifeoy/google-mlkit-spm/releases/download/$TARGET_VERSION/$TARGET_NAME.xcframework.zip"
     sed -Ei '' "s|name: \"$TARGET_NAME\".+\)|name: \"$TARGET_NAME\", url: \"$URL\", checksum: \"$CHECKSUM\"\)|g" Package.swift
 done
