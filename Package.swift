@@ -15,7 +15,7 @@ let package = Package(
         .package(url: "https://github.com/google/GoogleDataTransport.git", from: "10.1.0"),
         .package(url: "https://github.com/google/GoogleUtilities.git", from: "8.0.2"),
         .package(url: "https://github.com/google/gtm-session-fetcher.git", from: "3.5.0"),
-        .package(url: "https://github.com/firebase/nanopb.git", .upToNextMinor(from: "3.30910.0")),
+        .package(url: "https://github.com/firebase/nanopb.git", .upToNextMinor(from: "2.30910.0")),
         .package(url: "https://github.com/ZipArchive/ZipArchive.git", from: "2.6.0")
     ],
     targets: [
@@ -29,16 +29,14 @@ let package = Package(
             dependencies: [
                 "MLKitCommon",
                 "GoogleToolboxForMac",
-                "GoogleUtilitiesComponents",
-                "Protobuf",
                 .product(name: "GULAppDelegateSwizzler", package: "GoogleUtilities"),
                 .product(name: "GULEnvironment", package: "GoogleUtilities"),
-                .product(name: "GULISASwizzler", package: "GoogleUtilities"),
                 .product(name: "GULLogger", package: "GoogleUtilities"),
                 .product(name: "GULMethodSwizzler", package: "GoogleUtilities"),
-                .product(name: "GULNSData", package: "GoogleUtilities"),
                 .product(name: "GULNetwork", package: "GoogleUtilities"),
+                .product(name: "GULNSData", package: "GoogleUtilities"),
                 .product(name: "GULReachability", package: "GoogleUtilities"),
+                .product(name: "GULSwizzlerTestHelpers", package: "GoogleUtilities"),
                 .product(name: "GULUserDefaults", package: "GoogleUtilities"),
                 .product(name: "GTMSessionFetcher", package: "gtm-session-fetcher"),
                 .product(name: "GoogleDataTransport", package: "GoogleDataTransport"),

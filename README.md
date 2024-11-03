@@ -31,8 +31,8 @@ $ ./scripts/create-xcframeworks.sh
 ```
 
 > This script will:
-> - Build source-based libs then create xcframeworks for them (GoogleToolboxForMac, GoogleUtilitiesComponents, Protobuf)
-> - Use `xcframework-maker` to split prebuilt frameworks to xcframeworks (MLImage, MLKitCommon, MLKitBarcodeScanning,...)
+> - Build source-based libs then create xcframeworks for them (GoogleToolboxForMac)
+> - Use `xcframework-maker` to split prebuilt frameworks to xcframeworks (,...)
 > - Compress xcframeworks as zips and generate SHA256 to use in `Package.swift`
 
 ### Create a new release
