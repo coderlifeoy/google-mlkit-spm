@@ -75,3 +75,4 @@ Pods/
 # artifacts
 archives/
 xcframeworks_output/
+.build
