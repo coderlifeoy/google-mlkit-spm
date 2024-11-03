@@ -20,10 +20,10 @@ let package = Package(
     ],
     targets: [
         // these binaryTarget will be overriden when GitHub actions run, so do not edit
-        .binaryTarget(name: "MLKitTranslate", url: "https://github.com/coderlifeoy/google-mlkit-spm/releases/download/1.0.0/MLKitTranslate.xcframework.zip", checksum: "7c2575945bb2fb728c38b2bbd1d6d6d57756a9ec5e22464c8d9cf04bce3e2cf9"),
-        .binaryTarget(name: "MLKitNaturalLanguage", url: "https://github.com/coderlifeoy/google-mlkit-spm/releases/download/1.0.0/MLKitNaturalLanguage.xcframework.zip", checksum: "6e61009a898158df45d4ae8bbbd94148a72b145c24cdef6ea57ce92aa6418195"),
-        .binaryTarget(name: "MLKitCommon", url: "https://github.com/coderlifeoy/google-mlkit-spm/releases/download/1.0.0/MLKitCommon.xcframework.zip", checksum: "997a9b902bf9202892740b022a35ff34005c1c568e9f9b23d63a02b432dcfee9"),
-        .binaryTarget(name: "GoogleToolboxForMac", url: "https://github.com/coderlifeoy/google-mlkit-spm/releases/download/1.0.0/GoogleToolboxForMac.xcframework.zip", checksum: "e7c2ee710e5dbea3680f5bd37e9c0caee22253e72c2ac26935095c1630a5514c"),
+        .binaryTarget(name: "MLKitTranslate", url: "https://github.com/coderlifeoy/google-mlkit-spm/releases/download/1.0.0/MLKitTranslate.xcframework.zip", checksum: "e68f3089ceb5ba22b4bd2b1467bf7ace91d47296ce0d594d949b56fb43b0cbad"),
+        .binaryTarget(name: "MLKitNaturalLanguage", url: "https://github.com/coderlifeoy/google-mlkit-spm/releases/download/1.0.0/MLKitNaturalLanguage.xcframework.zip", checksum: "a95289834a1bf376c327250e7a008650a797b123ba4b120db2ad13b8c2d529e9"),
+        .binaryTarget(name: "MLKitCommon", url: "https://github.com/coderlifeoy/google-mlkit-spm/releases/download/1.0.0/MLKitCommon.xcframework.zip", checksum: "0859fd54c38c12c7bc17141eb07d1fef09d5f4d6bcf29266d244d8d81685d1df"),
+        .binaryTarget(name: "GoogleToolboxForMac", url: "https://github.com/coderlifeoy/google-mlkit-spm/releases/download/1.0.0/GoogleToolboxForMac.xcframework.zip", checksum: "e3e42adc27cb2f734e7126b7190d205ae6bdffca6bb44458e26ca4a1396260dd"),
         .target(
             name: "Common",
             dependencies: [
