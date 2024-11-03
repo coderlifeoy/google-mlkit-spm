@@ -1,4 +1,4 @@
-DEPLOYMENT_TARGET = '11.0'
+DEPLOYMENT_TARGET = '15.5'
 
 # Uncomment the next line to define a global platform for your project
 platform :ios, DEPLOYMENT_TARGET
@@ -15,7 +15,7 @@ target 'MLKitSPM' do
 
   # Pods for MLKitSPM
 
-  pod 'GoogleMLKit/BarcodeScanning', '~> 3.2.0'
+  pod 'GoogleMLKit/Translate', '7.0.0'
 
 end
 

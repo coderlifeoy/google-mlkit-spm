@@ -5,7 +5,7 @@ CYAN='\033[0;36m'
 WHITE='\033[1;37m'
 NC='\033[0m' # No Color
 
-ALL_TARGETS="MLImage MLKitBarcodeScanning MLKitCommon MLKitVision GoogleToolboxForMac GoogleUtilitiesComponents Protobuf"
+ALL_TARGETS="MLKitCommon GoogleToolboxForMac MLKitNaturalLanguage MLKitTranslate"
 
 for TARGET_NAME in $ALL_TARGETS
 do
